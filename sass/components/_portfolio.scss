@@ -1,0 +1,55 @@
+.portfolio {
+  max-width: 120rem;
+  margin: 0 auto;
+  display: grid;
+  column-gap: 2rem;
+  row-gap: 3.2rem;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: minmax(20rem, 1fr);
+
+  @include respond(w1072) {
+    gap: 2rem;
+  }
+
+  @include respond(w500) {
+    grid-template-rows: minmax(5rem, 1fr);
+  }
+
+  &__heading-box {
+    text-transform: uppercase;
+    grid-column: 1 / -1;
+    justify-self: center;
+    align-self: center;
+    position: relative;
+  }
+
+  &__heading {
+    color: var(--color-heading-primary);
+    opacity: 0.6;
+  }
+
+  &__subheading {
+    font-size: 2.4rem;
+    color: #000;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+
+    &::after {
+      content: "";
+      display: block;
+      height: 1px;
+      width: 100%;
+      background-image: -moz-linear-gradient(
+        left,
+        rgba(0, 0, 0, 0),
+        rgba(24, 100, 171, 1),
+        rgba(0, 0, 0, 0)
+      );
+    }
+  }
+}

@@ -1,0 +1,117 @@
+.composition {
+  height: 27%;
+  display: grid;
+  align-items: center;
+  overflow: visible;
+
+  @include respond(w1072) {
+    height: 15%;
+  }
+  @include respond(w752) {
+    height: 30%;
+  }
+  @include respond(w700) {
+    height: 100%;
+  }
+
+  &__photo-box {
+    position: relative;
+    height: inherit;
+
+    @include respond(w700) {
+      display: flex;
+    }
+  }
+
+  &__photo {
+    width: 65%;
+    box-shadow: var(--shadow-dark-black-small);
+    border-radius: 0.2rem;
+    position: absolute;
+    z-index: 10;
+    transition: outline 0.2s, border-radius 0s, transform 0.2s;
+    outline-offset: 1rem;
+
+    @include respond(w1072) {
+      width: 75%;
+    }
+    @include respond(w752) {
+      width: 85%;
+    }
+    @include respond(w700) {
+      position: static;
+      display: flex;
+    }
+
+    &--p1 {
+      left: 0;
+      top: -5rem;
+
+      @include respond(w1072) {
+        top: -3rem;
+      }
+
+      @include respond(w700) {
+      }
+    }
+    &--p2 {
+      right: 0rem;
+      top: 3rem;
+      @include respond(w1072) {
+        top: 4rem;
+      }
+      @include respond(w700) {
+      }
+    }
+    &--p3 {
+      left: 10%;
+      top: 13rem;
+      @include respond(w1072) {
+        left: 6%;
+        top: 13rem;
+      }
+      @include respond(w700) {
+      }
+    }
+    &--p4 {
+      right: 0;
+      top: -4rem;
+      @include respond(w1072) {
+        top: -3rem;
+      }
+    }
+    &--p5 {
+      left: 0rem;
+      top: 3rem;
+      @include respond(w1072) {
+        top: 4rem;
+      }
+    }
+    &--p6 {
+      right: 10%;
+      top: 17rem;
+      @include respond(w1072) {
+        right: 6%;
+        top: 16rem;
+      }
+    }
+    &:hover {
+      outline: 1rem solid var(--color-primary);
+      border-radius: 0;
+      transform: scale(1.1) translateY(-0.5rem);
+      box-shadow: 0 3.2rem 4.8rem rgba(#000, 0.5);
+      z-index: 20;
+
+      @media only screen and (max-width: 78.125em) {
+        outline: none;
+      }
+
+      @include respond(w752) {
+        transform: scale(1.05);
+      }
+    }
+  }
+  &:hover &__photo:not(:hover) {
+    transform: scale(0.95);
+  }
+}

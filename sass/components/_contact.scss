@@ -1,0 +1,283 @@
+.contact {
+  max-width: 120rem;
+  margin: 0 auto;
+  display: grid;
+  column-gap: 2rem;
+  row-gap: 6rem;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: minmax(20rem, 1fr);
+
+  @include respond(w500) {
+    grid-template-rows: minmax(5rem, 1fr);
+  }
+
+  &__heading-box {
+    text-transform: uppercase;
+    grid-column: 1 / -1;
+    justify-self: center;
+    align-self: center;
+    position: relative;
+  }
+
+  &__heading {
+    color: var(--color-heading-primary);
+    opacity: 0.6;
+  }
+
+  &__subheading {
+    font-size: 2.4rem;
+    color: #000;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+
+    &::after {
+      content: "";
+      display: block;
+      height: 1px;
+      width: 100%;
+      background-image: -moz-linear-gradient(
+        left,
+        rgba(0, 0, 0, 0),
+        rgba(24, 100, 171, 1),
+        rgba(0, 0, 0, 0)
+      );
+    }
+  }
+
+  &__adress {
+    grid-column: 1 / 5;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+
+    @include respond(w700) {
+      padding-right: 1.6rem;
+      grid-column: 1 / -1;
+      grid-row: 3 / 4;
+
+      display: grid;
+      max-width: 120rem;
+
+      grid-template-columns: repeat(12, 1fr);
+      gap: 4.8rem;
+    }
+
+    @include respond(w600) {
+      column-gap: 0;
+      row-gap: 2.4rem;
+      padding-right: 0;
+    }
+  }
+
+  &__heading-tertiary--1 {
+    @include respond(w700) {
+      grid-column: 1 / -1;
+      grid-row: 1 / 2;
+      justify-self: center;
+    }
+  }
+  &__heading-tertiary--2 {
+    @include respond(w700) {
+      grid-column: 1 / -1;
+      grid-row: 4 / 5;
+      justify-self: center;
+
+      margin-top: 2.4rem;
+    }
+
+    @include respond(w600) {
+      grid-row: 5 / 6;
+    }
+  }
+
+  &__text {
+    font-size: 1.4rem;
+  }
+
+  &__contact-box {
+    display: flex;
+    gap: 3.2rem;
+    align-items: center;
+
+    @include respond(w700) {
+      justify-content: center;
+      gap: 1.6rem;
+      padding: 2.4rem;
+      border: 0.2rem solid var(--color-primary-light);
+      border-radius: 0.3rem;
+
+      &:last-child {
+        grid-row: 5 / 6;
+        grid-column: 3 / 11;
+        justify-content: space-between;
+      }
+    }
+
+    &--1 {
+      grid-column: 2 / 7;
+    }
+    &--2 {
+      grid-column: 7 / 12;
+    }
+    &--3 {
+      grid-column: 4 / 10;
+      grid-row: 3 / 4;
+    }
+
+    @include respond(w600) {
+      &--1 {
+        grid-row: 2 / 3;
+      }
+      &--2 {
+        grid-row: 3 / 4;
+      }
+      &--3 {
+        grid-row: 4 / 5;
+      }
+
+      &:last-child {
+        grid-row: 6 / 7;
+        justify-content: space-between;
+      }
+
+      &--1,
+      &--2,
+      &--3,
+      &:last-child {
+        grid-column: 2 / 12;
+        padding: 4.8rem 1.6rem;
+      }
+    }
+
+    @include respond(w400) {
+      &--1,
+      &--2,
+      &--3,
+      &:last-child {
+        grid-column: 1 / -1;
+        padding: 1.6rem;
+      }
+      &--1,
+      &--2,
+      &--3 {
+        display: flex;
+        flex-direction: column;
+        box-sizing: normal;
+        min-height: 19rem;
+      }
+    }
+  }
+
+  &__adress-box {
+    @include respond(w400) {
+      text-align: center;
+    }
+  }
+
+  &__icon-adress {
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: var(--color-primary);
+    background-color: rgba(24, 100, 171, 0.2);
+    height: 6.4rem;
+    width: 6.4rem;
+    border-radius: 50%;
+  }
+
+  &__icon-follow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4.8rem;
+    width: 4.8rem;
+    margin-left: -1.2rem;
+    border-radius: 50%;
+    font-size: 3rem;
+    text-decoration: none;
+    color: var(--color-grey-dark-2);
+    transition: all 0.6s;
+
+    &--facebook:hover {
+      background-color: rgba(#3b5998, 0.1);
+      color: #3b5998;
+    }
+    &--twitter:hover {
+      color: #00acee;
+      background-color: rgba(#00acee, 0.1);
+    }
+    &--instagram:hover {
+      color: #bc1888;
+      background-color: rgba(#bc1888, 0.1);
+    }
+    &--linkedin:hover {
+      color: #0e76a8;
+      background-color: rgba(#0e76a8, 0.1);
+    }
+    &--pinterest:hover {
+      color: #bd081c;
+      background-color: rgba(#bd081c, 0.1);
+    }
+  }
+
+  &__location {
+    width: 100%;
+    height: 100%;
+    padding-left: 3.2rem;
+    grid-column: 5 / -1;
+
+    @include respond(w752) {
+      grid-column: 6 / -1;
+      padding: 0;
+    }
+
+    @include respond(w700) {
+      grid-row: 2 / 3;
+      grid-column: 1 / -1;
+    }
+  }
+
+  &__map {
+    width: 100%;
+    height: inherit;
+
+    @include respond(w752) {
+      padding-right: 3.2rem;
+    }
+    @include respond(w700) {
+      padding: 0 3.2rem;
+      min-height: 40rem;
+    }
+  }
+
+  &__form {
+    grid-column: 2 / 12;
+    // background: linear-gradient(to right bottom, #373b44, #4286f4);
+    // background: linear-gradient(to right bottom, #0575e6, #021b79);
+    // background: linear-gradient(to right bottom, #1488cc, #2b32b2);
+    // background: linear-gradient(to right bottom, #000428, #004e92);
+    background: linear-gradient(to right bottom, #0052d4, #4364f7, #6fb1fc);
+
+    color: var(--color-white);
+    padding: 3.6rem;
+    border-radius: 0.6rem;
+
+    @include respond(w752) {
+      grid-column: 1 / -1;
+    }
+
+    @include respond(w600) {
+      padding: 2.4rem;
+    }
+  }
+  &__form-box {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+  }
+}

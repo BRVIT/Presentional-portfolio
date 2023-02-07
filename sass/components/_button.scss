@@ -1,0 +1,87 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+    max-width: fit-content;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    padding: 1.2rem 4.8rem;
+    font-weight: 700;
+    color: var(--color-white);
+    border-radius: 100rem;
+    border: none;
+    position: relative;
+    z-index: 1;
+
+    transition: all 0.2s;
+    cursor: pointer;
+    transform: var(--translateZ-md);
+  }
+
+  &:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: var(--shadow-dark-button);
+
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+    transform: translateY(-0.1rem);
+    box-shadow: var(--shadow-dark-button);
+  }
+
+  &--blue {
+    background-color: var(--color-primary);
+
+    &::after {
+      background-color: var(--color-primary);
+    }
+  }
+  &--white {
+    color: var(--color-primary-light);
+    background-color: var(--color-white);
+
+    &::after {
+      background-color: var(--color-white);
+    }
+  }
+
+  &::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+  }
+
+  &--cv {
+    max-width: 40rem;
+    padding: 2.4rem;
+    margin-top: 2.4rem;
+
+    @include respond(w600) {
+      max-width: inherit;
+    }
+  }
+
+  &--card {
+    background-color: #333;
+    transform: var(--translateZ-sm);
+
+    &::after {
+      background-color: #333;
+    }
+  }
+}

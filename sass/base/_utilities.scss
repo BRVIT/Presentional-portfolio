@@ -1,0 +1,20 @@
+@include respond(w600) {
+  .u-text-tac {
+    text-align: center !important;
+  }
+}
+
+.pr {
+  position: relative;
+}
+
+.show {
+  @include respond(w600) {
+    display: block;
+  }
+}
+.hide {
+  @include respond(w600) {
+    display: none !important;
+  }
+}

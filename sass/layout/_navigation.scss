@@ -1,0 +1,91 @@
+.navigation {
+  min-width: 66rem;
+
+  @include respond(w900) {
+    min-width: 52rem;
+  }
+
+  @include respond(w600) {
+    min-width: fit-content;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(1rem);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4.8rem;
+
+    @include respond(w700) {
+      gap: 2.4rem;
+    }
+    @include respond(w600) {
+      flex-direction: column;
+      gap: 4.8rem;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: var(--color-white);
+    font-weight: 500;
+    font-size: 1.8rem;
+    padding: 1.2rem 2.4rem;
+    border-radius: 0.8rem;
+    transition: all 0.3s;
+    cursor: pointer;
+
+    @include respond(w600) {
+      font-size: 3rem;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+  }
+
+  &__link:hover {
+    color: #222;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+
+  &__button-mobile {
+    overflow-anchor: none;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    display: none;
+    cursor: pointer;
+
+    @include respond(w600) {
+      display: block;
+    }
+  }
+
+  &__icon {
+    font-size: 3.6rem;
+    color: var(--color-white);
+  }
+  &__icon--open {
+    @include respond(w600) {
+      display: block;
+    }
+  }
+  &__icon--close {
+    @include respond(w600) {
+      position: fixed;
+      top: 2.5rem;
+      right: 4.8rem;
+      z-index: 999;
+    }
+  }
+}

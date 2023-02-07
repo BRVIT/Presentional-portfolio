@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="sk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./sass/main.scss" />
+    <title>Bryan Vandas Portfolio</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <a class="header__logo"> Portfolio </a>
+
+        <nav class="navigation hide">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__link scroll-to" data-home="home">Domov</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link scroll-to" data-about="about">O mne</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link scroll-to" data-portfolio="portfolio"
+                >Portfolio</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link scroll-to" data-contact="contact"
+                >Kontakt</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <a class="navigation__button-mobile">
+          <i class="ph-list navigation__icon navigation__icon--open"></i>
+          <i class="ph-x navigation__icon navigation__icon--close hide"></i>
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="section-hero">
+        <div class="hero">
+          <div class="hero__text-box">
+            <p class="hero__text--welcome hero__text-showing-up">
+              Vítam Vás na mojom portfóliu
+            </p>
+            <h2
+              class="heading-secondary pr hero__text-showing-up hero__text-showing-up--1"
+            >
+              Som <span class="hero__text-changing"></span>
+            </h2>
+            <p class="hero__text--location hero__text-showing-up">
+              Pochádzam zo Slovenska, Poprad
+            </p>
+            <a
+              class="btn btn--blue btn--animated hero__text-showing-up scroll-to"
+              data-about="about"
+              >Niečo viac o mne</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section-aboutme">
+        <div class="aboutme">
+          <div
+            class="aboutme__box aboutme__box--primary reveal-box--primary reveal--primary"
+          >
+            <div class="aboutme__heading-box">
+              <h1 class="heading-primary aboutme__heading">Viac o mňe</h1>
+              <p class="aboutme__subheading">Zisti kto som</p>
+            </div>
+
+            <div class="aboutme__author">
+              <img src="/img/Me.jpg" alt="Bryan Richard Vandas" />
+            </div>
+
+            <div class="aboutme__text-box">
+              <p class="aboutme__text u-text-tac">
+                Som Bryan Richard Vandas, samouk čo sa týka programovania
+              </p>
+              <p class="aboutme__text">
+                Vyštudoval som vysokú školu v Žiline, konkrétne strojne
+                inžinierstvo, avšak v poslednom roku som si uvedomoval viac a
+                viac, že ma tento odbor nenapĺňa a nespĺňa moje predstavy s tým
+                prečo som tam šiel a začal som sa pomaly hľadať, čo by ma mohlo
+                zaujímať, baviť a ma svetlu budúcnosť.
+              </p>
+              <p class="aboutme__text">
+                Avšak nájsť niečo čo by človeka napĺňalo a malo aj dobru víziu
+                do budúcna, takáto myšlienka nepríde zo dna na deň a človek musí
+                nad tým dlhšie premýšľať.
+              </p>
+              <button
+                data-portfolio="portfolio"
+                class="btn btn--blue btn--cv btn--animated scroll-to"
+              >
+                Portfólio
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="aboutme__box aboutme__box--secondary aboutme__box--secondary-1 reveal-box reveal"
+          >
+            <div class="aboutme__text-box">
+              <h3 class="aboutme__text-subheading heading-tertiary">
+                Moja cesta
+              </h3>
+              <p class="aboutme__text">
+                Ako som spomínal vyššie všetko sa to začalo v poslednom ročníku
+                Vysokej školy, kde človek už cíti, že skutočný život prichádza a
+                premýšľa viac o svojej budúcnosti ako o tom čo ho čaká ďalší
+                ročník. Po dlhšom rozmýšľaní a prečítaní niekoľko kníh o osobnom
+                rozvoji som si sadol a spísal aktivity, ktoré ma napĺňajú, bavia
+                a vyberal z nich čo by reálne malo budúcnosť.
+              </p>
+              <p class="aboutme__text">
+                Nakoniec z toho vzniklo, že programovanie by mohla byt ta
+                správna cesta, keďže ma stále udivovalo ako sa tento sektor
+                vyvinul, napredoval posledné roky, čo sa v ňom da spraviť s
+                myšlienkou, že to ešte nie je koniec a bude to napredovať stále
+                ďalej.
+              </p>
+              <p class="aboutme__text">
+                Práca s počítacom ma bavila už od útleho veku, dokázal som pri
+                ňom presedieť niekoľko hodín bez toho aby som musel rozmýšľať
+                nad inými vecami a mam par kamarátov, ktorí sa tomu venujú či už
+                vďaka škole alebo podobnou cestou ako som šiel ja.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="aboutme__box aboutme__box--secondary aboutme__box--secondary-2 reveal-box reveal"
+          >
+            <div class="composition">
+              <div class="composition__photo-box">
+                <img
+                  src="/img/Hobby-1.jpg"
+                  class="composition__photo composition__photo--p1"
+                  alt="Working out"
+                />
+                <img
+                  src="/img/Hobby-2.jpg"
+                  class="composition__photo composition__photo--p2"
+                  alt="Spending time in nature"
+                />
+                <img
+                  src="/img/Hobby-3.jpg"
+                  class="composition__photo composition__photo--p3"
+                  alt="Playing ice hockey"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="aboutme__box aboutme__box--secondary aboutme__box--secondary-3 reveal-box reveal"
+          >
+            <div class="composition">
+              <div class="composition__photo-box">
+                <img
+                  src="/img/Hobby-4.jpg"
+                  class="composition__photo composition__photo--p4"
+                  alt="Programming"
+                />
+                <img
+                  src="/img/Hobby-5.jpg"
+                  class="composition__photo composition__photo--p5"
+                  alt="Reading books"
+                />
+                <img
+                  src="/img/Hobby-6.jpg"
+                  class="composition__photo composition__photo--p6"
+                  alt="Programming"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="aboutme__box aboutme__box--secondary aboutme__box--secondary-4 reveal-box reveal"
+          >
+            <div class="aboutme__text-box">
+              <h3 class="aboutme__text-subheading heading-tertiary">
+                Pokračovanie
+              </h3>
+              <p class="aboutme__text">
+                Oficiálne sa programovaniu venujem od začiatku piateho ročníka,
+                kde sa ta cela cesta vyvíjala s prestávkami keďže som musel
+                stíhať jednak jednotlivé predmety a zadania na nich spolu s
+                diplomovou prácou.
+              </p>
+              <p class="aboutme__text">
+                Po naštudovaní si materiálov online a prediskutovaní sa
+                kamarátmi som sa vydal cestou Front-endu, keďže tá vstupná
+                bariéra je ideálnejšia vďaka HTML a CSS. Momentálne sa k tomu
+                snažím pridať Javascript, kde pri pochopení tohto
+                programovacieho jazyka by som rad vrhol na nejakú knižnicu či už
+                React alebo framework Vue.js.
+              </p>
+              <p class="aboutme__text">
+                Táto cela cesta je ešte len na začiatku, kde po zvládnutí
+                Front-endu by som sa rad naučil aj Back-end aby sa zo mňa mohol
+                stáť Full-stack programátor, avšak cesta programátora je veľmi
+                dlhá a nikto nevie kde úplne skonči lebo vzdelávať sa v tomto
+                odbore je potrebne celý život.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-portfolio">
+        <div id="portfolio" class="portfolio">
+          <div class="portfolio__heading-box reveal-box reveal">
+            <h1 class="heading-primary portfolio__heading reveal">Portfólio</h1>
+            <p class="portfolio__subheading">Aplikácie</p>
+          </div>
+          <div class="card card--1 reveal-box reveal">
+            <div class="card__content">
+              <div class="card__front card__front--1 card__block">
+                <i class="ph-game-controller card__icon"></i>
+                <h3 class="card__title">Api-NHL</h3>
+                <p class="card__text">
+                  Tato aplikácia sa sústredí na prácu s api, teda na získavanie
+                  jednotlivých informácii za pomoci Axiosu, kde následne
+                  jednotlivé informácie sú vyrenderované na stránke. Môžete si
+                  vyhľadať všetky tímy NHL, kde všetky tímy sú vypísane celkovo
+                  a rozdelene do konferencii, taktiež sa môžete o nich dozvedieť
+                  základne informácie a ich postavenie v tabuľke.
+                </p>
+              </div>
+              <div class="card__back card__block">
+                <ul class="card__list">
+                  <li>
+                    <h4 class="card__tools-heading">Použité technológie</h4>
+                  </li>
+                  <li class="card__list-item">
+                    <img
+                      src="icons/html5.svg"
+                      alt="html icon"
+                      class="card__icon--back"
+                    />
+                    <p>HTML</p>
+                  </li>
+                  <li class="card__list-item">
+                    <img
+                      src="icons/css3.svg"
+                      alt="css icon"
+                      class="card__icon--back"
+                    />
+                    <p>CSS</p>
+                  </li>
+                  <li class="card__list-item">
+                    <img
+                      src="icons/javascript.svg"
+                      alt="javascript icon"
+                      class="card__icon--back"
+                    />
+                    <p>Javascript</p>
+                  </li>
+                  <li class="card__list-item">
+                    <img
+                      src="icons/axios.svg"
+                      alt="axios icon"
+                      class="card__icon--back"
+                    />
+                    <p>Axios</p>
+                  </li>
+                  <li class="card__list-item">
+                    <img
+                      src="icons/vite.svg"
+                      alt="vite icon"
+                      class="card__icon--back"
+                    />
+                    <p>Vite</p>
+                  </li>
+                </ul>
+                <a
+                  href="https://nhl-api-portfolio.netlify.app"
+                  class="btn btn--card btn--animated"
+                  >Vyskúšaj to</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card card--2 reveal-box reveal">
+            <div class="card__content">
+              <div class="card__front card__front--2">
+                <i class="ph-shopping-cart card__icon"></i>
+                <h3 class="card__title">Shopping cart</h3>
+                <p class="card__text">
+                  Aplikacia Shopping cart ako už z názvu nahovára sa sústredí na
+                  renderovanie jednotlivých produktov z json filu a následne
+                  pridávanie týchto produktov do košíka, kde ukazuje typ
+                  produktu, cenu, počet a celkovú sumu všetkých produktov.
+                  Následne sú všetky produkty uložene v session storage v
+                  Prípade, že by sa chcel užívateľ prekliknúť na inú časť
+                  stránky.
+                </p>
+              </div>
+              <div class="card__back">
+                <ul class="card__list">
+                  <li>
+                    <h4 class="card__tools-heading">Použité technológie</h4>
+                  </li>
+                  <li class="card__list-item">
+                    <img
+                      src="icons/html5.svg"
+                      alt="html icon"
+                      class="card__icon--back"
+                    />
+                    <p>HTML</p>
+                  </li>
+                  <li class="card__list-item">
+                    <img
+                      src="icons/css3.svg"
+                      alt="css icon"
+                      class="card__icon--back"
+                    />
+                    <p>CSS</p>
+                  </li>
+                  <li class="card__list-item">
+                    <img
+                      src="icons/javascript.svg"
+                      alt="javascript icon"
+                      class="card__icon--back"
+                    />
+                    <p>Javascript</p>
+                  </li>
+                  <li class="card__list-item">
+                    <img
+                      src="icons/tailwindcss.svg"
+                      alt="axios icon"
+                      class="card__icon--back"
+                    />
+                    <p>Tailwind</p>
+                  </li>
+                  <li class="card__list-item">
+                    <img
+                      src="icons/vite.svg"
+                      alt="vite icon"
+                      class="card__icon--back"
+                    />
+                    <p>Vite</p>
+                  </li>
+                </ul>
+                <a
+                  href="https://shopping-cart-portfolio.netlify.app"
+                  class="btn btn--card btn--animated"
+                  >Vyskúšaj to</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card card--3 reveal-box reveal">
+            <div class="card__content">
+              <div class="card__front card__front--3">
+                <i class="ph-clipboard-text card__icon"></i>
+                <h3 class="card__title">Todo list</h3>
+                <p class="card__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolor, excepturi.Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Dolor, excepturi. Lorem ipsum dolor sit amet
+                  consectetur adipisicing elit. Dolor, excepturi.Lorem ipsum
+                  dolor sit amet consectetur adipisicing elit. Dolor, excepturi.
+                </p>
+              </div>
+              <div class="card__back">
+                <p class="card__text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero
+                  officia inventore ab.
+                </p>
+                <a href="#" class="btn btn--card btn--animated">Vo vyvoji</a>
+              </div>
+            </div>
+          </div>
+          <div class="card card--4 reveal-box reveal">
+            <div class="card__content">
+              <div class="card__front card__front--4">
+                <i class="ph-question card__icon"></i>
+                <h3 class="card__title">Quiz</h3>
+                <p class="card__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolor, excepturi.Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Dolor, excepturi. Lorem ipsum dolor sit amet
+                  consectetur adipisicing elit. Dolor, excepturi.Lorem ipsum
+                  dolor sit amet consectetur adipisicing elit. Dolor, excepturi.
+                </p>
+              </div>
+              <div class="card__back">
+                <p class="card__text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero
+                  officia inventore ab.
+                </p>
+                <a href="#" class="btn btn--card btn--animated">Vo vyvoji</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-contact">
+        <div id="contact" class="contact">
+          <div class="contact__heading-box reveal-box reveal">
+            <h1 class="heading-primary contact__heading">Kontakt</h1>
+            <p class="contact__subheading">Napíš mi</p>
+          </div>
+
+          <div class="contact__adress reveal-box reveal">
+            <h3 class="heading-tertiary contact__heading-tertiary--1">
+              Moja adresa
+            </h3>
+
+            <div class="contact__contact-box contact__contact-box--1">
+              <div class="contact__icon-box">
+                <i class="ph-map-pin-line contact__icon-adress"></i>
+              </div>
+
+              <div class="contact__adress-box">
+                <p class="contact__text">Slovakia</p>
+                <p class="contact__text">Dlhé Hony 3251/66</p>
+                <p class="contact__text">058 01 Poprad</p>
+              </div>
+            </div>
+
+            <div class="contact__contact-box contact__contact-box--2">
+              <div class="contact__icon-box">
+                <i class="ph-device-mobile contact__icon-adress"></i>
+              </div>
+
+              <div class="contact__adress-box">
+                <p class="contact__text">+421 948 003 293</p>
+              </div>
+            </div>
+
+            <div class="contact__contact-box contact__contact-box--3">
+              <div class="contact__icon-box">
+                <i class="ph-envelope contact__icon-adress"></i>
+              </div>
+
+              <div class="contact__adress-box">
+                <p class="contact__text">
+                  Bryan.Richard.Vandas.Portfolio@gmail.com
+                </p>
+              </div>
+            </div>
+
+            <h3 class="heading-tertiary contact__heading-tertiary--2">
+              Sleduj ma
+            </h3>
+            <div class="contact__contact-box">
+              <a
+                href="#"
+                class="contact__icon-follow contact__icon-follow--facebook"
+              >
+                <i class="ph-facebook-logo"></i>
+              </a>
+              <a
+                href="#"
+                class="contact__icon-follow contact__icon-follow--twitter"
+              >
+                <i class="ph-twitter-logo"></i>
+              </a>
+              <a
+                href="#"
+                class="contact__icon-follow contact__icon-follow--instagram"
+              >
+                <i class="ph-instagram-logo"></i>
+              </a>
+              <a
+                href="#"
+                class="contact__icon-follow contact__icon-follow--linkedin"
+              >
+                <i class="ph-linkedin-logo"></i>
+              </a>
+              <a
+                href="#"
+                class="contact__icon-follow contact__icon-follow--pinterest"
+              >
+                <i class="ph-pinterest-logo"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="contact__location reveal-box reveal">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2614.975276126868!2d20.289041715681154!3d49.04909367930662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473e3a97eee80cfd%3A0xd35e4c8654fd027f!2sDlh%C3%A9%20Hony%2C%20058%2001%20Poprad!5e0!3m2!1scs!2ssk!4v1647682078373!5m2!1scs!2ssk"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              class="contact__map"
+            ></iframe>
+          </div>
+
+          <div class="contact__form reveal-box reveal">
+            <div class="contact__form-box">
+              <h2 class="heading-secondary">Napiš mi</h2>
+              <form
+                href="#"
+                class="form"
+                action="https://formsubmit.co/bryan.richard.vandas.portfolio@gmail.com"
+                method="POST"
+              >
+                <div class="form__group form__group--1">
+                  <input
+                    type="text"
+                    name="name"
+                    class="form__input"
+                    placeholder="Celé meno"
+                    id="name"
+                    required
+                  />
+                  <label for="name" class="form__label">Celé meno</label>
+                </div>
+
+                <div class="form__group form__group--2">
+                  <input
+                    type="email"
+                    name="email"
+                    class="form__input"
+                    placeholder="Emailová adresa"
+                    id="email"
+                    required
+                  />
+                  <label for="email" class="form__label">Emailová adresa</label>
+                </div>
+
+                <div class="form__group form__group--3">
+                  <textarea
+                    name="text"
+                    class="form__textarea"
+                    placeholder="Tvoja sprava..."
+                    id="textarea"
+                    rows="10"
+                  ></textarea>
+                </div>
+
+                <div class="form__group form__group--4">
+                  <button type="submit" class="btn btn--white btn__mail">
+                    Napíš mi &rarr;
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="section-footer">
+      <div class="footer">
+        <p class="footer__copyright">
+          Copyright &copy; <span data-year-update>2022</span>
+          <span class="colored">Bryan Richard Vandas</span> Všetky práva
+          vyhradené.
+        </p>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/phosphor-icons" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12" defer></script>
+    <script src="https://smtpjs.com/v3/smtp.js" defer></script>
+    <script src="js/app.js" type="module"></script>
+  </body>
+</html>

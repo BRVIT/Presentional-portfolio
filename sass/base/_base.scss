@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+
+  @include respond(w1200) {
+    font-size: 56.25%;
+  }
+
+  @include respond(w900) {
+    font-size: 50%;
+  }
+
+  @include respond(w1800) {
+    font-size: 75%;
+  }
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: var(--color-grey-dark-2);
+  overflow-x: hidden;
+}
+
+.container {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(12, 8rem);
+}
+
+.reveal-box {
+  opacity: 0;
+  transition: 1s ease-in-out transform, 1s ease-in-out opacity;
+  transform: translateY(50%);
+
+  &--primary {
+    transition: 1s ease-in-out transform, 1s ease-in-out opacity;
+    opacity: 0;
+    transform: translateY(20%);
+  }
+}
+
+.reveal {
+  opacity: 1;
+  transform: translateY(0);
+
+  &--primary {
+    opacity: 1;
+    transform: translateY(-20rem);
+
+    @include respond(w1200) {
+      transform: translateY(-14rem);
+    }
+  }
+}

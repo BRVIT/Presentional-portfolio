@@ -1,0 +1,56 @@
+.hero {
+  padding: 0 8rem;
+  color: var(--color-white);
+  animation: moveInLeft 2s ease-in-out 1s;
+  animation-fill-mode: backwards;
+
+  @include respond(w600) {
+    padding: 0 2.4rem;
+  }
+
+  &__text-box {
+    display: flex;
+    flex-direction: column;
+    gap: 4.8rem;
+
+    @include respond(w600) {
+      gap: 8rem;
+    }
+  }
+
+  &__text--welcome {
+    position: relative;
+    font-size: 3rem;
+    width: max-content;
+
+    @include respond(w600) {
+      font-size: 2.4rem;
+    }
+  }
+
+  &__text-showing-up--1 {
+    min-width: 60rem;
+    @include respond(w600) {
+      min-width: 36rem;
+      font-size: 2.8rem;
+    }
+  }
+
+  &__text-showing-up::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: var(--color-white);
+    border-radius: 0.4rem;
+    animation: heroIntroduction 4s ease-out 2s;
+    animation-fill-mode: backwards;
+  }
+
+  &__text--location {
+    position: relative;
+    font-size: 2.4rem;
+    width: max-content;
+  }
+}
