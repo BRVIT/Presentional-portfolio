@@ -10,6 +10,7 @@
     grid-column: 1 / -1;
     font-size: 1.6rem;
     @include respond(w500) {
+      text-align: center;
       font-size: 1.4rem;
     }
   }

@@ -19,8 +19,8 @@
   }
 
   &__logo {
-    font-size: 3rem;
-    color: var(--color-white);
+    width: 6rem;
+    height: 5.5rem;
 
     @include respond(w700) {
       font-size: 2.4rem;
