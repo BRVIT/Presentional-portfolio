@@ -20,6 +20,7 @@
 
     @include respond(w700) {
       display: flex;
+      position: static;
     }
   }
 
@@ -39,6 +40,7 @@
       width: 85%;
     }
     @include respond(w700) {
+      max-width: 33.33%;
       position: static;
       display: flex;
     }
