@@ -1,16 +1,9 @@
-// vite.config.js
-import { resolve } from "path";
 import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
 import autoprefixer from "autoprefixer";
 
 export default defineConfig({
-  build: {
-    rollupOptions: {
-      input: {
-        index: resolve(__dirname, "index.html"),
-      },
-    },
-  },
+  plugins: [react()],
   css: {
     postcss: {
       plugins: [autoprefixer()],
