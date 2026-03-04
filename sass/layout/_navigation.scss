@@ -1,8 +1,8 @@
-.navigation {
+﻿.navigation {
   min-width: 66rem;
 
   @include respond(w900) {
-    min-width: 52rem;
+    min-width: 54rem;
   }
 
   @include respond(w600) {
@@ -12,8 +12,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(0, 0, 0, 0.8);
-    backdrop-filter: blur(1rem);
+    background: rgba(6, 14, 30, 0.92);
+    backdrop-filter: blur(1.2rem);
     position: fixed;
     top: 0;
     left: 0;
@@ -25,45 +25,49 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 4.8rem;
+    gap: 3rem;
 
     @include respond(w700) {
-      gap: 2.4rem;
+      gap: 1.4rem;
     }
+
     @include respond(w600) {
       flex-direction: column;
-      gap: 4.8rem;
+      gap: 3.2rem;
     }
   }
 
   &__link {
     text-decoration: none;
-    color: var(--color-white);
-    font-weight: 500;
-    font-size: 1.8rem;
-    padding: 1.2rem 2.4rem;
-    border-radius: 0.8rem;
+    color: #e9f5ff;
+    font-weight: 600;
+    font-size: 1.45rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 1.1rem 2.1rem;
+    border-radius: 999px;
+    border: 1px solid rgba(125, 211, 252, 0.24);
     transition: all 0.3s;
     cursor: pointer;
 
     @include respond(w600) {
-      font-size: 3rem;
-      font-weight: bold;
-      text-transform: uppercase;
+      font-size: 2.3rem;
+      letter-spacing: 0.14em;
     }
-  }
 
-  &__link:hover {
-    color: #222;
-    background-color: rgba(255, 255, 255, 0.8);
+    &:hover {
+      color: #f6fbff;
+      background: linear-gradient(135deg, rgba(31, 111, 235, 0.24), rgba(34, 211, 238, 0.24));
+      border-color: rgba(125, 211, 252, 0.48);
+      box-shadow: 0 0.8rem 2.2rem rgba(31, 111, 235, 0.28);
+    }
   }
 
   &__button-mobile {
     overflow-anchor: none;
-    display: flex;
+    display: none;
     align-items: center;
     text-decoration: none;
-    display: none;
     cursor: pointer;
 
     @include respond(w600) {
@@ -73,18 +77,15 @@
 
   &__icon {
     font-size: 3.6rem;
-    color: var(--color-white);
+    color: #d4edff;
+    text-shadow: 0 0 1.4rem rgba(34, 211, 238, 0.35);
   }
-  &__icon--open {
-    @include respond(w600) {
-      display: block;
-    }
-  }
+
   &__icon--close {
     @include respond(w600) {
       position: fixed;
-      top: 2.5rem;
-      right: 4.8rem;
+      top: 2.1rem;
+      right: 2.4rem;
       z-index: 999;
     }
   }

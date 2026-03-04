@@ -1,4 +1,4 @@
-.btn {
+﻿.btn {
   &,
   &:link,
   &:visited {
@@ -6,26 +6,26 @@
     display: inline-block;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 1.6rem;
-    padding: 1.2rem 4.8rem;
+    letter-spacing: 0.08em;
+    font-size: 1.35rem;
+    padding: 1.4rem 3.8rem;
     font-weight: 700;
     color: var(--color-white);
-    border-radius: 100rem;
-    border: none;
+    border-radius: 999px;
+    border: 1px solid rgba(125, 211, 252, 0.34);
     position: relative;
     z-index: 1;
-
-    transition: all 0.2s;
+    transition: all 0.25s;
     cursor: pointer;
     transform: var(--translateZ-md);
   }
 
   &:hover {
-    transform: translateY(-0.3rem);
+    transform: translateY(-0.25rem);
     box-shadow: var(--shadow-dark-button);
 
     &::after {
-      transform: scaleX(1.4) scaleY(1.6);
+      transform: scaleX(1.2) scaleY(1.35);
       opacity: 0;
     }
   }
@@ -38,18 +38,19 @@
   }
 
   &--blue {
-    background-color: var(--color-primary);
+    background: var(--gradient-brand);
 
     &::after {
-      background-color: var(--color-primary);
+      background: var(--gradient-brand);
     }
   }
+
   &--white {
-    color: var(--color-primary-light);
-    background-color: var(--color-white);
+    color: var(--color-grey-dark-1);
+    background-color: rgba(244, 250, 255, 0.98);
 
     &::after {
-      background-color: var(--color-white);
+      background-color: rgba(244, 250, 255, 0.98);
     }
   }
 
@@ -58,30 +59,33 @@
     display: inline-block;
     height: 100%;
     width: 100%;
-    border-radius: 100rem;
+    border-radius: 999px;
     position: absolute;
     top: 0;
     left: 0;
     z-index: -1;
-    transition: all 0.4s;
+    transition: all 0.35s;
   }
 
   &--cv {
     max-width: 40rem;
-    padding: 2.4rem;
-    margin-top: 2.4rem;
+    padding: 1.8rem 3.6rem;
+    margin-top: 1.6rem;
 
     @include respond(w600) {
-      max-width: inherit;
+      max-width: 100%;
+      width: 100%;
+      text-align: center;
     }
   }
 
   &--card {
-    background-color: #333;
+    background: rgba(7, 16, 34, 0.92);
+    border-color: rgba(125, 211, 252, 0.3);
     transform: var(--translateZ-sm);
 
     &::after {
-      background-color: #333;
+      background: rgba(7, 16, 34, 0.92);
     }
   }
 }

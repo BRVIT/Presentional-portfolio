@@ -1,7 +1,7 @@
-.hero {
+﻿.hero {
   padding: 0 8rem;
   color: var(--color-white);
-  animation: moveInLeft 2s ease-in-out 1s;
+  animation: moveInLeft 1.2s ease 0.2s;
   animation-fill-mode: backwards;
 
   @include respond(w600) {
@@ -11,28 +11,32 @@
   &__text-box {
     display: flex;
     flex-direction: column;
-    gap: 4.8rem;
+    gap: 4rem;
 
     @include respond(w600) {
-      gap: 8rem;
+      gap: 5.6rem;
     }
   }
 
   &__text--welcome {
     position: relative;
-    font-size: 3rem;
+    font-size: 2.4rem;
     width: max-content;
+    color: #d5ebff;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
 
     @include respond(w600) {
-      font-size: 2.4rem;
+      font-size: 2rem;
+      width: auto;
     }
   }
 
   &__text-showing-up--1 {
-    min-width: 60rem;
+    min-width: 64rem;
+
     @include respond(w600) {
-      min-width: 36rem;
-      font-size: 2.8rem;
+      min-width: 0;
     }
   }
 
@@ -42,15 +46,26 @@
     top: 0;
     left: 0;
     height: 100%;
-    background-color: var(--color-white);
-    border-radius: 0.4rem;
-    animation: heroIntroduction 4s ease-out 2s;
+    background: rgba(203, 236, 255, 0.56);
+    border-radius: 0.6rem;
+    animation: heroIntroduction 3.8s ease-out 1.6s;
     animation-fill-mode: backwards;
+  }
+
+  &__text-changing {
+    color: #7dd3fc;
+    text-shadow: 0 0 1.8rem rgba(34, 211, 238, 0.35);
   }
 
   &__text--location {
     position: relative;
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     width: max-content;
+    color: #ccddf1;
+
+    @include respond(w600) {
+      width: auto;
+      font-size: 1.9rem;
+    }
   }
 }

@@ -1,4 +1,4 @@
-.portfolio {
+﻿.portfolio {
   max-width: 120rem;
   margin: 0 auto;
   display: grid;
@@ -24,32 +24,27 @@
   }
 
   &__heading {
-    color: var(--color-heading-primary);
-    opacity: 0.6;
+    color: rgba(194, 209, 230, 0.4);
+    opacity: 1;
   }
 
   &__subheading {
-    font-size: 2.4rem;
-    color: #000;
-    font-weight: 600;
+    font-size: 2.2rem;
+    color: #cde8fb;
+    font-weight: 700;
     text-transform: uppercase;
+    letter-spacing: 0.08em;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    opacity: 1;
 
     &::after {
       content: "";
       display: block;
-      height: 1px;
+      height: 2px;
       width: 100%;
-      background-image: -moz-linear-gradient(
-        left,
-        rgba(0, 0, 0, 0),
-        rgba(24, 100, 171, 1),
-        rgba(0, 0, 0, 0)
-      );
+      background: linear-gradient(90deg, transparent, rgba(34, 211, 238, 0.9), transparent);
     }
   }
 }

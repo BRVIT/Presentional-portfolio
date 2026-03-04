@@ -1,4 +1,4 @@
-.footer {
+﻿.footer {
   max-width: 120rem;
   margin: 0 auto;
   display: grid;
@@ -8,14 +8,16 @@
 
   &__copyright {
     grid-column: 1 / -1;
-    font-size: 1.6rem;
+    font-size: 1.55rem;
+    color: #c6d9ee;
+
     @include respond(w500) {
       text-align: center;
-      font-size: 1.4rem;
+      font-size: 1.35rem;
     }
   }
 }
 
 .colored {
-  color: var(--color-primary);
+  color: #7dd3fc;
 }

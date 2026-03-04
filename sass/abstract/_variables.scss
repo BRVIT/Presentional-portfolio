@@ -1,33 +1,41 @@
-:root {
-  --color-primary: rgb(24, 100, 171);
-  --color-primary-light: #2988e0;
-  --color-primary-dark: #1249ed;
+﻿:root {
+  --color-primary: #1f6feb;
+  --color-primary-light: #38bdf8;
+  --color-primary-dark: #1747a6;
+  --color-secondary: #7dd3fc;
+  --color-accent: #22d3ee;
 
-  --color-white: #fff;
-  --color-black: #000;
+  --color-white: #ffffff;
+  --color-black: #040b18;
 
-  --color-grey-light-1: #faf9f9;
-  --color-grey-light-2: #f4f2f2;
-  --color-grey-light-3: #f0eeee;
-  --color-grey-light-4: #ccc;
+  --color-grey-light-1: #f6f9ff;
+  --color-grey-light-2: #ebf1fb;
+  --color-grey-light-3: #dce6f5;
+  --color-grey-light-4: #b5c6dd;
 
-  --color-grey-dark-1: #333;
-  --color-grey-dark-2: #555;
-  --color-grey-dark-3: #777;
-  --color-grey-dark-4: #999;
+  --color-grey-dark-1: #111f35;
+  --color-grey-dark-2: #243954;
+  --color-grey-dark-3: #4e6a90;
+  --color-grey-dark-4: #7e95b5;
 
-  --color-heading-primary: #dee3e4;
+  --color-heading-primary: #c2d1e6;
 
-  // Shadows
-  --shadow-dark-black-big: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.4);
-  --shadow-light-black-big: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.06);
+  --gradient-brand: linear-gradient(135deg, #1747a6 0%, #1f6feb 58%, #22d3ee 100%);
+  --gradient-surface: linear-gradient(
+    148deg,
+    rgba(255, 255, 255, 0.97) 0%,
+    rgba(238, 245, 255, 0.93) 100%
+  );
+  --gradient-dark: linear-gradient(145deg, #060f21 0%, #0d1d3b 60%, #143868 100%);
 
-  --shadow-dark-black-small: 0 1.2rem 2.4rem rgba(0, 0, 0, 0.4);
-  --shadow-light-black-small: 0 1.2rem 2.4rem rgba(0, 0, 0, 0.06);
+  --shadow-dark-black-big: 0 2.5rem 5rem rgba(7, 17, 35, 0.3);
+  --shadow-light-black-big: 0 2rem 4rem rgba(7, 17, 35, 0.12);
 
-  --shadow-dark-button: 0 1.2rem 2.4rem rgba(24, 100, 171, 0.4);
+  --shadow-dark-black-small: 0 1.2rem 2.4rem rgba(7, 17, 35, 0.24);
+  --shadow-light-black-small: 0 1rem 2rem rgba(7, 17, 35, 0.1);
 
-  // TranslateZ
+  --shadow-dark-button: 0 1.4rem 3rem rgba(31, 111, 235, 0.36);
+
   --translateZ-sm: translateZ(3rem);
   --translateZ-md: translateZ(6rem);
   --translateZ-bg: translateZ(9rem);
