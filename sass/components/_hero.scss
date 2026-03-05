@@ -1,4 +1,6 @@
-﻿.hero {
+@use "../abstract/mixins" as *;
+
+.hero {
   padding: 0 8rem;
   color: var(--color-white);
   animation: moveInLeft 1.2s ease 0.2s;

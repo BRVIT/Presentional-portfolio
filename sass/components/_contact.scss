@@ -1,4 +1,6 @@
-﻿.contact {
+@use "../abstract/mixins" as *;
+
+.contact {
   max-width: 120rem;
   margin: 0 auto;
   display: grid;

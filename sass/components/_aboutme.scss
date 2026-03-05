@@ -1,4 +1,6 @@
-﻿.aboutme {
+@use "../abstract/mixins" as *;
+
+.aboutme {
   max-width: 120rem;
   margin: 0 auto;
   display: grid;

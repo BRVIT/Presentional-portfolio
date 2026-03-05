@@ -1,4 +1,6 @@
-﻿.section-hero {
+@use "../abstract/mixins" as *;
+
+.section-hero {
   min-height: 100vh;
   width: 100%;
   background-image:

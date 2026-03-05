@@ -1,4 +1,6 @@
-﻿.card {
+@use "../abstract/mixins" as *;
+
+.card {
   &__content {
     position: relative;
     transition: transform 0.9s;
@@ -171,13 +173,23 @@
     transform: var(--translateZ-md);
     text-align: center;
     color: #d7e8f9;
+
+    &--fundway {
+      max-width: 29rem;
+      font-size: 1.08em;
+      line-height: 1.45;
+    }
   }
 
   &__back {
     gap: 3.6rem;
     width: inherit;
     transform: rotateY(0.5turn);
-    background: linear-gradient(145deg, rgba(8, 20, 40, 0.96) 0%, rgba(19, 46, 84, 0.93) 100%);
+    background: linear-gradient(
+      145deg,
+      rgba(8, 20, 40, 0.96) 0%,
+      rgba(19, 46, 84, 0.93) 100%
+    );
     color: #d9e9f8;
   }
 
@@ -187,6 +199,17 @@
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
+
+    &--compact {
+      gap: 0.8rem;
+      font-size: 1.3rem;
+      line-height: 1.45;
+
+      .card__tools-heading {
+        font-size: 1.9rem;
+        margin-bottom: 0.8rem;
+      }
+    }
   }
 
   &__tools-heading {
@@ -199,6 +222,24 @@
     display: flex;
     justify-content: space-between;
     gap: 2.4rem;
+
+    &--text {
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 0.9rem;
+
+      p {
+        margin: 0;
+      }
+    }
+  }
+
+  &__list-icon {
+    font-size: 1.6rem;
+    line-height: 1;
+    color: #7dd3fc;
+    margin-top: 0.2rem;
+    flex-shrink: 0;
   }
 
   @media (pointer: coarse) {

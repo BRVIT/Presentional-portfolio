@@ -1,4 +1,6 @@
-﻿.btn {
+@use "../abstract/mixins" as *;
+
+.btn {
   &,
   &:link,
   &:visited {

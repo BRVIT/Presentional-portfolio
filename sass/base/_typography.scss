@@ -1,4 +1,6 @@
-﻿body {
+@use "../abstract/mixins" as *;
+
+body {
   font-family: "Manrope", sans-serif;
   line-height: 1.8;
   font-weight: 400;

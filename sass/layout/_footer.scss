@@ -1,4 +1,6 @@
-﻿.footer {
+@use "../abstract/mixins" as *;
+
+.footer {
   max-width: 120rem;
   margin: 0 auto;
   display: grid;

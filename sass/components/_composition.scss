@@ -1,4 +1,6 @@
-﻿.composition {
+@use "../abstract/mixins" as *;
+
+.composition {
   height: 27%;
   display: grid;
   align-items: center;

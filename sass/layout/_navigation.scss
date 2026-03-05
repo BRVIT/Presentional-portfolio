@@ -1,4 +1,6 @@
-﻿.navigation {
+@use "../abstract/mixins" as *;
+
+.navigation {
   min-width: 66rem;
 
   @include respond(w900) {

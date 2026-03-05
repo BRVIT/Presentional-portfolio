@@ -1,4 +1,6 @@
-﻿.portfolio {
+@use "../abstract/mixins" as *;
+
+.portfolio {
   max-width: 120rem;
   margin: 0 auto;
   display: grid;
