@@ -36,6 +36,22 @@
     }
   }
 
+  &__status {
+    grid-column: 1 / -1;
+    margin: 0.4rem 0 0;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 700;
+
+    &--success {
+      color: #7ee787;
+    }
+
+    &--error {
+      color: #ff9a9a;
+    }
+  }
+
   &__input,
   &__textarea {
     width: 100%;
@@ -85,4 +101,9 @@
   &__radio-input:checked ~ &__radio-label &__radio-button::after {
     opacity: 1;
   }
+}
+
+.btn__mail:disabled {
+  opacity: 0.8;
+  cursor: not-allowed;
 }
