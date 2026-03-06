@@ -4,9 +4,9 @@ export default function PortfolioSection() {
       <div id="portfolio" className="portfolio">
         <div className="portfolio__heading-box reveal-box reveal">
           <h1 className="heading-primary portfolio__heading reveal">
-            Portfólio
+            PortfĂłlio
           </h1>
-          <p className="portfolio__subheading">Aplikácie</p>
+          <p className="portfolio__subheading">AplikĂˇcie</p>
         </div>
         <div className="card card--1 reveal-box reveal">
           <div className="card__content">
@@ -62,18 +62,18 @@ export default function PortfolioSection() {
               <i className="ph-shopping-cart card__icon"></i>
               <h3 className="card__title">Shopping cart</h3>
               <p className="card__text">
-                Aplikacia Shopping cart ako už z názvu nahovára sa sústredí na
-                renderovanie jednotlivých produktov z json filu a následne
-                pridávanie týchto produktov do košíka, kde ukazuje typ produktu,
-                cenu, počet a celkovú sumu všetkých produktov. Následne sú
-                všetky produkty uložene v session storage v Prípade, že by sa
-                chcel užívateľ prekliknúť na inú časť stránky.
+                Aplikacia Shopping cart ako uĹľ z nĂˇzvu nahovĂˇra sa sĂşstredĂ­ na
+                renderovanie jednotlivĂ˝ch produktov z json filu a nĂˇsledne
+                pridĂˇvanie tĂ˝chto produktov do koĹˇĂ­ka, kde ukazuje typ produktu,
+                cenu, poÄŤet a celkovĂş sumu vĹˇetkĂ˝ch produktov. NĂˇsledne sĂş
+                vĹˇetky produkty uloĹľene v session storage v PrĂ­pade, Ĺľe by sa
+                chcel uĹľĂ­vateÄľ prekliknĂşĹĄ na inĂş ÄŤasĹĄ strĂˇnky.
               </p>
             </div>
             <div className="card__back">
               <ul className="card__list">
                 <li>
-                  <h4 className="card__tools-heading">Použité technológie</h4>
+                  <h4 className="card__tools-heading">PouĹľitĂ© technolĂłgie</h4>
                 </li>
                 <li className="card__list-item">
                   <img
@@ -120,7 +120,7 @@ export default function PortfolioSection() {
                 href="https://shopping-cart-portfolio.netlify.app"
                 className="btn btn--card btn--animated"
               >
-                Vyskúšaj to
+                VyskĂşĹˇaj to
               </a>
             </div>
           </div>
@@ -128,66 +128,45 @@ export default function PortfolioSection() {
         <div className="card card--3 reveal-box reveal">
           <div className="card__content">
             <div className="card__front card__front--3">
-              <i className="ph-chat-text card__icon"></i>
-              <h3 className="card__title">Chat room</h3>
+              <i className="ph-shield-check card__icon"></i>
+              <h3 className="card__title">Cyberix</h3>
               <p className="card__text">
-                Táto chatovacia aplikácia je mojím prvým projektom vytvoreným za
-                použitia React frameworku a Firebase databázy. Cieľom projektu
-                je demonštrovať vedomosti a schopnosti v základných konceptoch
-                Reactu a jeho integrácii s cloudovou databázou Firebase.
+                Corporate landing page for a Dubai-based cybersecurity
+                consultancy. Built with Nuxt 3, TypeScript and Tailwind CSS,
+                with i18n readiness and CRM-integrated lead capture.
               </p>
             </div>
             <div className="card__back">
-              <ul className="card__list">
+              <ul className="card__list card__list--compact">
                 <li>
-                  <h4 className="card__tools-heading">Použité technológie</h4>
+                  <h4 className="card__tools-heading">Stack + features</h4>
                 </li>
-                <li className="card__list-item">
-                  <img
-                    src="icons/html5.svg"
-                    alt="html icon"
-                    className="card__icon--back"
-                  />
-                  <p>HTML</p>
+                <li className="card__list-item card__list-item--text">
+                  <i className="ph-check-circle card__list-icon"></i>
+                  <p>Nuxt 3, Vue 3, TypeScript</p>
                 </li>
-                <li className="card__list-item">
-                  <img
-                    src="icons/css3.svg"
-                    alt="css icon"
-                    className="card__icon--back"
-                  />
-                  <p>CSS</p>
+                <li className="card__list-item card__list-item--text">
+                  <i className="ph-check-circle card__list-icon"></i>
+                  <p>Tailwind CSS, dark responsive UI</p>
                 </li>
-                <li className="card__list-item">
-                  <img
-                    src="icons/react.svg"
-                    alt="react icon"
-                    className="card__icon--back"
-                  />
-                  <p>React</p>
+                <li className="card__list-item card__list-item--text">
+                  <i className="ph-check-circle card__list-icon"></i>
+                  <p>@nuxtjs/i18n localization-ready</p>
                 </li>
-                <li className="card__list-item">
-                  <img
-                    src="icons/firebase.svg"
-                    alt="firebase icon"
-                    className="card__icon--back"
-                  />
-                  <p>Firebase</p>
+                <li className="card__list-item card__list-item--text">
+                  <i className="ph-check-circle card__list-icon"></i>
+                  <p>Nodemailer + Google reCAPTCHA v3</p>
                 </li>
-                <li className="card__list-item">
-                  <img
-                    src="icons/vite.svg"
-                    alt="vite icon"
-                    className="card__icon--back"
-                  />
-                  <p>Vite</p>
+                <li className="card__list-item card__list-item--text">
+                  <i className="ph-check-circle card__list-icon"></i>
+                  <p>Pipedrive Web Forms CRM integration</p>
                 </li>
               </ul>
               <a
-                href="https://chat-app-portfolio.netlify.app/"
+                href="https://cyberix.solutions"
                 className="btn btn--card btn--animated"
               >
-                Vyskúšaj to
+                Live website
               </a>
             </div>
           </div>
@@ -195,23 +174,48 @@ export default function PortfolioSection() {
         <div className="card card--4 reveal-box reveal">
           <div className="card__content">
             <div className="card__front card__front--4">
-              <i className="ph-question card__icon"></i>
-              <h3 className="card__title">Quiz</h3>
+              <i className="ph-map-pin-area card__icon"></i>
+              <h3 className="card__title">Walkis</h3>
               <p className="card__text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor,
-                excepturi.Lorem ipsum dolor sit amet consectetur adipisicing
-                elit. Dolor, excepturi. Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Dolor, excepturi.Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Dolor, excepturi.
+                Produkcna Flutter appka pre Android/iOS. Hands-free turisticky
+                sprievodca, ktory podla geolokacie automaticky spusta lokalne
+                video tour content pri vstupe do radiusu bodov zaujmu.
               </p>
             </div>
             <div className="card__back">
-              <p className="card__text">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero
-                officia inventore ab.
-              </p>
-              <a href="#" className="btn btn--card btn--animated">
-                Vo vyvoji
+              <ul className="card__list card__list--compact">
+                <li>
+                  <h4 className="card__tools-heading">Stack + architecture</h4>
+                </li>
+                <li className="card__list-item card__list-item--text">
+                  <i className="ph-check-circle card__list-icon"></i>
+                  <p>Flutter / Dart (Android + iOS)</p>
+                </li>
+                <li className="card__list-item card__list-item--text">
+                  <i className="ph-check-circle card__list-icon"></i>
+                  <p>Firebase Firestore (split data model)</p>
+                </li>
+                <li className="card__list-item card__list-item--text">
+                  <i className="ph-check-circle card__list-icon"></i>
+                  <p>Geolocator + GeoFlutterFire Plus (real-time geofencing)</p>
+                </li>
+                <li className="card__list-item card__list-item--text">
+                  <i className="ph-check-circle card__list-icon"></i>
+                  <p>video_player + Chewie</p>
+                </li>
+                <li className="card__list-item card__list-item--text">
+                  <i className="ph-check-circle card__list-icon"></i>
+                  <p>
+                    Google Maps, 4-language localization, flavor builds,
+                    Analytics + Crashlytics
+                  </p>
+                </li>
+              </ul>
+              <a
+                href="https://play.google.com/store/apps/details?id=eu.denevy.walkis&hl=sk"
+                className="btn btn--card btn--animated"
+              >
+                Google Play
               </a>
             </div>
           </div>
